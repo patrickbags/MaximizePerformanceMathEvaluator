@@ -15,7 +15,7 @@ The implementation of Expression Tree approach uses a Builder Pattern to create 
 3. Method
 ======================
 Approach of this study is as follows:
-a.	Strategy Pattern is used. 
+a.	Strategy Pattern is used. <br/>
 b.	Infix-to-Postfix approach and Expression Tree approach both are subclasses of the Strategy class created.
 c.	Based on the command line argument, whether ‘postfix’ or ‘exprtree’, corresponding strategy is created and that approach is used for evaluating the expressions.
 d.	The expressions are created using a separate method in a text file and that text file is read by both the strategies for evaluation purpose.
