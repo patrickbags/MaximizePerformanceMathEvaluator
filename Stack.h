@@ -1,17 +1,5 @@
-// -*- C++ -*-
-// $Id: Stack.h 380 2010-02-08 05:10:33Z hillj $
-
-//==============================================================================
-/**
- * Honor Pledge:
- *
- * I pledge that I have neither given nor received any help
- * on this assignment.
- */
-//==============================================================================
-
-#ifndef _CS507_STACK_H_
-#define _CS507_STACK_H_
+#ifndef _STACK_H_
+#define _STACK_H_
 
 #include <exception>
 #include <iostream>
@@ -137,4 +125,4 @@ private:
 // include the source file since template class
 #include "Stack.cpp"
 
-#endif  // !defined _CS507_STACK_H_
+#endif  // !defined _STACK_H_
