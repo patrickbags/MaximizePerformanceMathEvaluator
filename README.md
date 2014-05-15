@@ -24,9 +24,9 @@ f.	Execution time measured is in milliseconds.
 
 4. Improvement
 ======================
-In the Infix-to-Postfix implementation, the commands (operators) are stateless objects. The frequent allocation and de-allocation of these objects (Excessive Dynamic Allocation) is lowering the performance of this approach. This frequent allocation and de-allocation of stateless objects can be avoided with the help of Flyweight Pattern. <br/>
-To evaluate the performance of Infix-to-Postfix using Flyweight Pattern, a Flyweight Command Factory is used which has all the stateless objects (operators) as its member variables and they are created only once at the object initialization of Flyweight Command Factory. This saves a lot of time.<br/>
-To compare the performance with the original implementation of Infix-to-Postfix, a Postfix Flyweight strategy is created. Based on the command line input of ‘flyweight’, this strategy gets created. <br/>
+In the Infix-to-Postfix implementation, the commands (operators) are stateless objects. The frequent allocation and de-allocation of these objects (Excessive Dynamic Allocation) is lowering the performance of this approach. This frequent allocation and de-allocation of stateless objects can be avoided with the help of Flyweight Pattern. <br/><br/>
+To evaluate the performance of Infix-to-Postfix using Flyweight Pattern, a Flyweight Command Factory is used which has all the stateless objects (operators) as its member variables and they are created only once at the object initialization of Flyweight Command Factory. This saves a lot of time.<br/><br/>
+To compare the performance with the original implementation of Infix-to-Postfix, a Postfix Flyweight strategy is created. Based on the command line input of ‘flyweight’, this strategy gets created. <br/><br/>
 The other benefit of this approach is the memory management. There is no need to explicitly de-allocate the command objects. They get de-allocated once the Flyweight Command Factory goes out of scope.<br/>
 <br/>
 Presently, the Open brackets are considered as commands and nodes in both the implementations. Performance can be improved can making changes to the design.
