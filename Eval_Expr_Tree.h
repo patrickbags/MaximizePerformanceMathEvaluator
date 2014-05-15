@@ -1,12 +1,3 @@
-//==============================================================================
-/** 
-* Honor Pledge:
- *
- * I pledge that I have neither given nor received any help
- * on this assignment.
- */
-//==============================================================================
-
 /**
  * @class Evaluate Expression Tree Visitor
  * Represents a concrete Visitor.
@@ -130,9 +121,7 @@ public:
 	class FloatingPointException : public std::exception
 	{
 		public:
-		/// Default constructor.
-		//DividebyZeroException (void): std::exception () { }
-
+		
 		/**
 		* Initializing constructor.
 		*
