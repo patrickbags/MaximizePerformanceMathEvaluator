@@ -1,10 +1,3 @@
-/*==============================================================================
-
- Honor Pledge:
- I pledge that I have neither given nor received any help
- on this assignment.
- 
-==============================================================================*/
 /*
 @class Subtract Command
 
@@ -17,11 +10,7 @@ IMPLEMENTATION OF SUB COMMAND CLASS
 
 #include "Binary_Op_Command.h"
 
-// Shweta, add more detailed documentation to your
-// class definitions.
 
-// Shweta, your class needs a virtual destructor since it
-// has at least one virtual method.
 
 class Sub_Command: public Binary_Op_Command
 {
