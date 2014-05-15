@@ -1,10 +1,4 @@
-/*==============================================================================
 
- Honor Pledge:
- I pledge that I have neither given nor received any help
- on this assignment.
- 
-==============================================================================*/
 
 /*
 @class Command
@@ -18,11 +12,6 @@ IMPLEMENTATION OF COMMAND CLASS
 
 #include "Stack.h"
 
-// Shweta, add more detailed documentation to your
-// class definitions.
-
-// Shweta, your class needs a virtual destructor since it
-// has at least one virtual method.
 
 class Command
 {
