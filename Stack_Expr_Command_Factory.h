@@ -1,11 +1,3 @@
-
-/*==============================================================================
-
- Honor Pledge:
- I pledge that I have neither given nor received any help
- on this assignment.
- 
-==============================================================================*/
 /*
 @class Stack Expression Command Factory 
 
@@ -17,12 +9,6 @@ IMPLEMENTATION OF STACK_EXPRESSION_COMMAND_FACTORY CLASS
 
 
 #include "Expr_Command_Factory.h"
-
-// Shweta, add more detailed documentation to your
-// class definitions.
-
-// Shweta, your class needs a virtual destructor since it
-// has at least one virtual method.
 
 class Stack_Expr_Command_Factory : public Expr_Command_Factory
 {
