@@ -1,10 +1,3 @@
-/*==============================================================================
-
- Honor Pledge:
- I pledge that I have neither given nor received any help
- on this assignment.
- 
-==============================================================================*/
 /*
 @class Expression Command Factory
 
@@ -22,9 +15,6 @@ IMPLEMENTATION OF EXPR_COMMAND_FACTORY CLASS
 #include "Mul_Command.h"
 #include "Mod_Command.h"
 #include "OpenBracket_Command.h"
-
-// Shweta, add more detailed documentation to your
-// class definitions.
 
 class Expr_Command_Factory
 {
@@ -86,9 +76,9 @@ public:
 
 private:
 
-	//Expr_Command_Factory(const Expr_Command_Factory &);
+	Expr_Command_Factory(const Expr_Command_Factory &);
 
-	//Expr_Command_Factory & operator = (const Expr_Command_Factory &);	
+	Expr_Command_Factory & operator = (const Expr_Command_Factory &);	
 };
 
 #endif //!EXPR_COMMAND_FACTORY_H
