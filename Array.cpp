@@ -1,9 +1,3 @@
-// $Id: Array.cpp 827 2011-02-07 14:20:53Z hillj $
-
-// Honor Pledge:
-//
-// I pledge that I have neither given nor receieved any help
-// on this assignment.
 
 #include "Array.h"
 #include <stdexcept>         // for std::out_of_bounds exception
@@ -16,9 +10,6 @@
 //
 template <typename T>
 Array <T>::Array (void)
-// Shweta, initialize each member variable on its own line.
-// This is a repeat offense.
-//***Corrected*/
 : data_(0),
 cur_size_(0),
 max_size_(0)
@@ -31,27 +22,10 @@ max_size_(0)
 //
 template <typename T>
 Array <T>::Array (size_t length)
-// Shweta, initialize each member variable on its own line.
-// This is a repeat offense.
-//***Corrected*/
 :data_(new T[length]),
 cur_size_(length),
 max_size_(length)
 {
-	/*if(length<=0)
-	{	
-		length=DEFAULT_SIZE;
-		this->data_=new T[length];
-		this->max_size_=length;
-		this->cur_size_=0;
-	}
-	else
-	{
-		this->cur_size_=length;
-		this->max_size_=DEFAULT_SIZE;
-		this->data_=new T[DEFAULT_SIZE];
-	}*/
-
 }
 
 //
@@ -59,29 +33,10 @@ max_size_(length)
 //
 template <typename T>
 Array <T>::Array (size_t length, T fill)
-// Shweta, initialize each member variable on its own line.
-// This is a repeat offense.
-//***Corrected*/
 :	data_(new T[length]),
 	cur_size_(length),
 	max_size_(length)
 {
-	//if(length<=0)
-	//{	
-	//	length=DEFAULT_SIZE;
-	//	this->data_=new T[length];
-	//	this->max_size_=length;
-	//	this->cur_size_=0;
-	//}
-	//else
-	//{
-	//	this->cur_size_=length;
-	//	//this->max_size_=length;
-	//	this->max_size_=DEFAULT_SIZE;
-	//	//this->data_=new T[length];
-	//	this->data_=new T[DEFAULT_SIZE];
-	//	this->fill(fill);
-	//}
 
 	this->fill(fill);
 }
@@ -91,9 +46,6 @@ Array <T>::Array (size_t length, T fill)
 //
 template <typename T>
 Array <T>::Array (const Array & array)
-// Shweta, initialize each member variable on its own line.
-// This is a repeat offense.
-//***Corrected*/
 :	data_(new T[array.cur_size_]),
 	cur_size_(array.cur_size_),
 	max_size_(array.max_size_)
@@ -135,9 +87,6 @@ const Array <T> & Array <T>::operator = (const Array & rhs)
 		
 	}
 	return *this;
-  
-  // Shweta, self-assignment should be allowed. If there is
-  // self-assignment, you should just return.
   
 }
 
@@ -228,8 +177,6 @@ void Array <T>::resize (size_t new_size)
 		}
 		delete [] this->data_;
 
-//		std::fill_n(n_data,new_size,(T)0);
-			
 		this->cur_size_=new_size;
 		this->max_size_=new_size;
 				
@@ -244,17 +191,6 @@ void Array <T>::resize (size_t new_size)
 		
 
 	}
-	////***Increase the cur_size to new_size
-	//else if(new_size > this->size() && new_size <= this->max_size()) 
-	//{
-	//	//size_t temp_size = this->cur_size_;
-	//	this->cur_size_ = new_size;
-	//	/*for(size_t i = temp_size; i < new_size; i++)
-	//	{
-	//		this->data_[i]=(T)0;
-	//	}*/
-	//	
-	//}
 
 }
 
