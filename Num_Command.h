@@ -1,10 +1,4 @@
-/*==============================================================================
 
- Honor Pledge:
- I pledge that I have neither given nor received any help
- on this assignment.
- 
-==============================================================================*/
 /*
 @class Number Command
 
@@ -18,11 +12,7 @@ IMPLEMENTATION OF NUMBER COMMAND CLASS
 #include "Command.h"
 #include "Stack.h"
 
-// Shweta, add more detailed documentation to your
-// class definitions.
 
-// Shweta, your class needs a virtual destructor since it
-// has at least one virtual method.
 
 class Num_Command: public Command
 {
