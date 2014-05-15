@@ -1,10 +1,3 @@
-/*==============================================================================
-
- Honor Pledge:
- I pledge that I have neither given nor received any help
- on this assignment.
- 
-==============================================================================*/
 /*
 @class Division Command
 
@@ -15,12 +8,6 @@ IMPLEMENTATION OF  DIVISION COMMAND CLASS
 #define _DIV_COMMAND_H_
 
 #include "Binary_Op_Command.h"
-
-// Shweta, add more detailed documentation to your
-// class definitions.
-
-// Shweta, your class needs a virtual destructor since it
-// has at least one virtual method.
 
 class Div_Command: public Binary_Op_Command
 {
