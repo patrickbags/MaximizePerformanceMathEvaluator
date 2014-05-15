@@ -1,10 +1,3 @@
-/*==============================================================================
-
- Honor Pledge:
- I pledge that I have neither given nor received any help
- on this assignment.
- 
-==============================================================================*/
 /*
 @class Open Bracket Command
 
@@ -16,16 +9,6 @@ IMPLEMENTATION OF OPEN BRACKET COMMAND CLASS
 
 #include "Command.h"
 #include "Stack.h"
-
-// Shweta, add more detailed documentation to your
-// class definitions.
-
-// Shweta, your class needs a virtual destructor since it
-// has at least one virtual method.
-
-// Shweta, the open bracket is not a math operator and should
-// not appear in the command hiearchy. Fix your design so this
-// is not the case.
 
 class OpenBracket_Command: public Command
 {
